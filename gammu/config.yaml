@@ -1,0 +1,30 @@
+---
+version: 1.0.0
+slug: gammu
+name: Gammu SMS Gateway
+description: GSM modem SMS integration using Gammu and py-smsgateway-async
+url: https://github.com/YOUR-USERNAME/homeassistant-addons/tree/main/gammu
+arch:
+  - amd64
+  - aarch64
+  - armv7
+  - armhf
+  - i386
+startup: services
+boot: auto
+init: false
+map:
+  - config:rw
+  - ssl
+  - usb
+options:
+  device: "/dev/ttyUSB0"
+  baudspeed: "at115200"
+  poll_interval: 10
+ports:
+  3050/tcp: 3050
+schema:
+  device: str
+  baudspeed: str
+  poll_interval: int
+
