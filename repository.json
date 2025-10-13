@@ -1,7 +1,7 @@
 {
   "name": "Fork of Oscar Calvo Add-ons",
-  "url": "https://github.com/hassio-addons/home-assistant-addons-gammu",
-  "maintainer": "Mickey GMouse mickeyreg@gmail.com",
-  "logo": "https://raw.githubusercontent.com/hassio-addons/hassio-addons/main/logo.png"
+  "url": "https://github.com/mickeyreg/hassio-addons",
+  "maintainer": "Mickey Mouse mickeyreg@gmail.com",
+  "logo": "https://raw.githubusercontent.com/mickeyreg/hassio-addons/main/icon.png"
 }
 
