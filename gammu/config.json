@@ -1,10 +1,24 @@
 {
   "name": "Gammu SMS Gateway",
-  "version": "1.0.0",
-  "slug": "gammu",
+  "version": "1.0.1",
+  "slug": "gammusms",
   "description": "SMS gateway using Gammu",
   "startup": "services",
   "boot": "auto",
   "arch": ["amd64"],
   "host_network": true
+  "options": {
+    "device": "/dev/ttyUSB0",
+    "baudspeed": "at115200",
+    "poll_interval": 10,
+    "webhook_url": "",
+    "webhook_token": ""
+  },
+  "schema": {
+    "device": "str",
+    "baudspeed": "str",
+    "poll_interval": "int",
+    "webhook_url": "str?",
+    "webhook_token": "str?"
+  }
 }
