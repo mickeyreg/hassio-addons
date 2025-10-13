@@ -5,13 +5,15 @@ FROM ${BUILD_FROM}
 ENV LANG C.UTF-8
 
 # Install system dependencies and Python tooling
-RUN \
-  apk add --no-cache \
+RUN apk update \
+  && apk add --no-cache \
     python3 \
     py3-pip \
+    gammu \
     gammu-dev \
   && pip3 install --no-cache-dir -U setuptools wheel \
-  && pip3 install --no-cache-dir py-smsgateway-async
+  && pip3 install --no-cache-dir py-smsgateway-async \
+  && rm -rf /var/cache/apk/*
 
 # Copy root filesystem
 COPY rootfs /
