@@ -1,0 +1,10 @@
+{
+  "name": "Gammu SMS Gateway",
+  "version": "1.0.0",
+  "slug": "gammu",
+  "description": "SMS gateway using Gammu",
+  "startup": "services",
+  "boot": "auto",
+  "arch": ["amd64"],
+  "host_network": true
+}
