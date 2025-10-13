@@ -11,8 +11,8 @@ RUN apk update \
     py3-pip \
     gammu \
     gammu-dev \
-  && pip3 install --no-cache-dir -U setuptools wheel \
-  && pip3 install --no-cache-dir py-smsgateway-async \
+  && pip3 install --break-system-packages --no-cache-dir -U setuptools wheel \
+  && pip3 install --break-system-packages --no-cache-dir py-smsgateway-async \
   && rm -rf /var/cache/apk/*
 
 # Copy root filesystem
