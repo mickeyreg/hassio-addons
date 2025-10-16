@@ -17,7 +17,3 @@ RUN apk update \
 
 # Copy root filesystem
 COPY rootfs /
-
-# Change mode of startup scripts
-RUN chmod +x /etc/s6-overlay/s6-rc.d/gammu/run
-RUN chmod +x /etc/s6-overlay/s6-rc.d/gammu/finish
