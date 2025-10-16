@@ -1,6 +1,6 @@
 {
   "name": "Gammu SMS Gateway",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "slug": "gammu",
   "description": "SMS gateway using Gammu",
   "startup": "services",
