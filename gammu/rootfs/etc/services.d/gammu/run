@@ -32,5 +32,8 @@ bashio::log.info "Poll interval: ${POLL_INTERVAL}s"
 bashio::log.info "Webhook: $WEBHOOK_URL"
 
 # Start the SMS gateway server
-exec python3 -m pysmsgateway
+# exec python3 -m pysmsgateway
 
+bashio::log.info "🧪 Installed packages:"
+python3 -m pip list | tee /dev/stderr
+sleep infinity
